@@ -5,7 +5,10 @@
  * lose progress (when CONTEST_CONFIG.resumeOnRefresh is true).
  */
 
-const STORAGE_KEY = "coding_contest_state_v1";
+// v2 introduced function-based starter templates with input/output wrappers.
+// A new key ensures an old in-progress session cannot retain the obsolete
+// templates that only defined functions and never printed their results.
+const STORAGE_KEY = "coding_contest_state_v2";
 
 const defaultState = () => ({
   started: false,
