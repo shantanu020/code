@@ -1,0 +1,9 @@
+{
+  "name": "our-coding-challenge",
+  "private": true,
+  "version": "1.0.0",
+  "description": "A private, no-login coding contest for two. Static site — no build step required.",
+  "scripts": {
+    "dev": "npx --yes serve . -l 5173"
+  }
+}
